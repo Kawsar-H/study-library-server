@@ -66,4 +66,4 @@ client.connect(err => {
 
 app.use(cors());
 app.use(bodyParser.json())
-app.listen(port);
+app.listen(process.env.PORT || port);
